@@ -1,0 +1,383 @@
+*
+{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Itim";
+
+}
+
+body
+{
+      background-color: rgb(19, 22, 44 );
+}
+
+header
+{
+      background-color: rgb(19, 22, 44 );
+      margin-bottom: 3rem;
+}
+
+main
+{
+      font-family: 'Itim', cursive;
+      background-color: rgb(19, 22, 44 );
+      color: aliceblue;
+}
+
+/* Styles header */
+#container-header
+{
+      background-image: url("Img/background/main-background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      margin-top: 0.5rem;
+      border-radius: 0.5rem;
+      position: relative;
+      font-family: "Itim";
+      height: 10rem;
+}
+
+#container-header img 
+{
+      margin: 0.5rem 0;
+      border-radius: 1rem;
+}
+
+/* Styles de izquierd enlace */
+.enlace-diamantes
+{
+      background-color: rgb(0, 0, 0);
+      width: 16rem;
+      height: 2.5rem;
+      border-radius: 0.7rem;
+      text-align: center;
+      border: solid rgb(255, 179, 0);
+      position: absolute;
+      right: 1rem;
+      top: 6.7rem;
+      font-size: 1.3rem;
+}
+
+a
+{
+      text-align: center;
+      color: rgb(255, 179, 0);
+      text-decoration: none;
+}
+
+a:hover
+{
+      color: aliceblue;
+}
+
+/* Styles of Main */
+
+
+/* Styles Seccion seccion-card */
+#seccion-card
+{
+      display: flex;
+      border-radius: 0.5rem;
+}
+
+/* Styles of card */
+.card
+{
+      width: 26rem;
+      height: 29rem;
+      background-color: black;
+      color: aliceblue;
+      margin: 0 auto;
+}
+
+.card h3
+{
+      text-align: center;
+      color: rgb(255, 179, 0);
+}
+
+.card img
+{
+      margin: 0 auto;
+      border-radius: 0.5rem;
+}
+
+.card p
+{
+      text-align: center;
+      margin: 0.2rem;
+}
+
+.enlance-ver
+{
+      border: solid rgb(255, 179, 0);
+      width: 5rem;
+      text-align: center;
+      border-radius: 0.5rem;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+}
+
+/* Styles of seccion Buys */
+#container-buy, #container-buy-2
+{
+      margin-top: 7rem;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: black;
+      border-radius: 0.6rem;
+      margin-bottom: 5rem;
+}
+/* Styles of card-buy */
+.card-buy
+{
+      background-color: black;
+      width: 21rem;
+      height: 20rem;
+      justify-items: center;
+      color: aliceblue;
+      border-radius: 0.5rem;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1rem 1rem;
+}
+
+.card-buy img
+{
+
+      border-radius: 0.6rem;
+}
+
+.enlace-buy, .enlace-price
+{
+      border: solid rgb(255, 179, 0);
+      width: 5rem;
+      text-align: center;
+      border-radius: 0.5rem;
+}
+
+.enlace-price
+{     
+      position: absolute;
+      left: 1rem;
+      bottom: 1px;
+}
+
+.enlace-buy
+{
+      position: absolute;
+      right: 1rem;
+      bottom: 1px;
+}
+
+/* Carousel Fade de Freefire  */
+#carouselExampleFade
+{
+
+      max-height: 70rem;
+      display: flex;
+      overflow: hidden;
+      margin: 5rem 0;
+      position: relative;
+}
+
+
+#wandy
+{
+      position: absolute;
+      right: 1rem;
+      top: 0.3rem;
+      background-color: rgba(0, 0, 0, 0.438);
+      backdrop-filter: blur(11px);
+      width: auto;
+      /* min-width: 26rem; */
+      height: auto;
+      border-radius: 0.5rem;
+      justify-content: center;
+      display: flex;
+      padding: 0.5rem;
+}
+
+#wandy span
+{
+   
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 5rem;
+      height: 4.5rem;
+}
+
+
+/* Styles Seccion Register */
+
+#div-form h1
+{
+      color: rgb(255, 179, 0);
+    
+      margin: 0 auto;
+}
+
+#div-form
+{
+      width: 30rem;
+      height: 23rem;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      background-color: rgb(19, 22, 44 );
+      /* background-color: aliceblue; */
+      color: rgb(1, 136, 255);
+      font-family: "Itim";
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-items: center;
+      text-align: center;
+   
+
+}
+
+
+
+#form
+{
+    
+      display: flex;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+}
+
+#input-cards
+{
+      height: 2.5rem;
+      width: 27rem;
+      border-radius: 0.8rem;
+      border: none;
+      outline: none;
+      letter-spacing: 0.2px;
+      padding: 1rem;
+      margin: 0.1rem;
+      
+}
+
+#input-date, #input-cvv
+{
+      width: 10rem;
+      height: 2rem;
+      margin: 0.9rem 0.1rem;
+      border-radius: 0.8rem;
+      border: none;
+      outline:none;
+      padding: 1rem;
+      
+}
+
+#input-button
+{
+      width: 5rem;
+      height: 2rem;
+      /* position: absolute; */
+      /* bottom: 4px; */
+      /* right: 1rem; */
+      background-color: rgb(255, 179, 0);
+      color: aliceblue;
+      text-shadow: 1px 0px 3px rgb(61, 61, 61);
+      border: none;
+      margin: 0 0.1rem;
+      border-radius: 0.8rem;
+}
+
+#input-button a
+{
+      color: aliceblue;
+}
+
+#card-master
+{
+      height: 1rem;
+      display: flex;
+      justify-content: right;
+      margin: 1rem 0;
+}
+
+#registro
+{
+      width: 10rem;
+      color: aliceblue;
+      border-radius: 1rem;
+}
+#input-button:hover
+{
+      background-color: rgb(19, 22, 44 );
+      border: 2px solid rgb(255, 179, 0);;
+      color: rgb(255, 179, 0);;
+}
+
+#container-buy-2
+{
+      margin-top: 3rem;
+      height: 45rem;
+      width: 29rem;
+      /* display: flex; */
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+      /* background-color: rgb(19, 22, 44 ); */
+      background-color: black;
+      border-radius: 0.6rem;
+      margin-bottom: 5rem;
+}
+
+
+/* Styles of footer */
+
+
+
+#container-footer
+{
+      color: aliceblue;
+}
+
+h2
+{
+      color: rgb(255, 179, 0);;
+}
+h1, p 
+{
+      color: aliceblue;
+}
+
+/* verificar */
+
+/* Break-point */
+@media (max-width: 992px) {
+      #seccion-card
+      {
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+
+      }
+
+      .card
+      {
+            margin: 2rem 0;
+      }
+}
+
+
+
+
+@media (max-width:550px) {
+      
+}

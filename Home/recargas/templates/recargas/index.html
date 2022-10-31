@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<!-- Botstrap css-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- Botstrap js-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!-- Link CSS -->
+      <link rel="stylesheet" href=" {% static '/styles.css' %} ">
+      <title>Frefire</title>
+</head>
+<body>
+      <!-- Hearder -->
+      <header>
+            
+            <div class="container shadow shadow "  id="container-header">
+                  <!-- Imagen de logo derecho -->
+                  <img src="{% static '/Img/Logo/Frefire.png' %}"   height="90px" width="250px" alt="">
+
+                  <div class="enlace-diamantes">
+                        <a href="{% url 'recargas:info' %}">Preguntas frecuentes</a>
+                        <span>
+                              <img src="{% static '/Img/Diamantes.png' %}"  height="20px" width="30px" alt="">
+                        </span>
+                  </div>
+            </div>
+
+      </header>
+      <!-- Main -->
+      <main>
+            <!-- Card 1 -->
+            <section class="container " id="seccion-card" >
+                  <div class="card" >
+                        <h3>Sé el último en pie</h3>
+                        <img src="{% static '/Img/Escuadrq.jpg' %}" height="120px"  width="250px" alt="">
+                        <p>
+                              ¿Como jugar freefire? Facíl, los jugadores se enfrentan en una isla remota en partidas rápidas que duran unos 10 minutospara emboscar,  y buscar equipos. Hay una meta aquí: Controles fáciles de usar y gráficos suaves prometen la mejor experiencia de supervivencia que encontrarás en el móvil.
+                        </p>
+                        <div class="enlance-ver" >
+                              <a href="https://www.youtube.com/watch?v=Ef8wkjvs-Kg">Ver</a>
+                        </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="card" >
+                        <h3>¡Diamantes para ganar!</h3>
+                        <img src="{% static '/Img/diam2.jpg' %}" height="120px"  width="250px" alt="">
+                        <p>Los diamantes son el recurso más valioso en Free Fire. Ellos te permiten obtener algunas ventajas dentro del juego y salir ganador de las partidas. Los Diamantes se utilizan para comprar artículos en la tienda del juego, actualizar el Pase de temporada, girar el Diamante Royale, comprar personajes y ¡hasta desbloquear algunas habilidades extras!
+                        </p>
+                        <div class="enlance-ver" >
+                              <a href="https://www.youtube.com/watch?v=2TNJ3V4-0_s">Ver</a>
+                        </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card" >
+                        <h3>Cómo comprar Diamantes</h3>
+                        <img src="{% static '/Img/Gana-diamantes.png' %}" height="120px"  width="250px" alt="">
+                        <p>
+                              Después de seleccionar el paquete que prefieras y realizar tu compra con éxito podrás reclamar tu código en Hype ingresando a tu inventario y en la pestaña lateral de tu pantalla al seleccionar tu paquete de Diamantes, ingresarás el ID de tu cuenta y así obtendrás tus diamantes de forma inmediata!                        </p>
+                        <div class="enlance-ver" >
+                              <a href="https://www.youtube.com/watch?v=7zD_JyDMl9g">Ver</a>
+                        </div>
+                  </div>
+            </section>
+
+            <!-- Seccion of Buys -->
+            <section class="container shadow " id="container-buy" >
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 1,500 Diamantes</h4>
+                        <div class="enlace-price" >$9.99</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  1 %}">Comprar</a>
+                        </div>
+                  </div>
+                  <!-- Card-buys 2 -->
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 440 Diamantes</h4>
+                        <div class="enlace-price" >$3.00</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  2 %}">Comprar</a>
+                        </div>
+                  </div>
+                  <!-- Card-buys 3 -->
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 220 Diamantes</h4>
+                        <div class="enlace-price" >$1.00</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  3 %}">Comprar</a>
+                        </div>
+                  </div>
+                  <!-- Card-buys 4 -->
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 1,270 Diamantes</h4>
+                        <div class="enlace-price" >$10.99</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  4 %}">Comprar</a>
+                        </div>
+                  </div>
+                  <!-- Card-buys 5 -->
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 2,500 Diamantes</h4>
+                        <div class="enlace-price" >$20.99</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  5 %}">Comprar</a>
+                        </div>
+                  </div>
+                  <!-- Card-buys 6 -->
+                  <div class="card-buy">
+                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                        <h4>FreeFire- 6,300 Diamantes</h4>
+                        <div class="enlace-price" >$50.54</div>
+                        <div class="enlace-buy">
+                              <a href="{% url 'recargas:registro'  6 %}">Comprar</a>
+                        </div>
+                  </div>
+            </section>
+            <!-- Caorousel  Freefire -->
+            <div class="container" >
+                  
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  
+                  <div class="carousel-inner rounded-4 shadow" id="pruebas">
+                    <div class="carousel-item active ">
+                        <div class="container" id="wandy" >
+                              <span>
+                                    
+                                    <img src="{% static '/Img/Logo/Faceboock.png' %}" width="50px" height="50px" alt="">
+                                    <a href="https://web.facebook.com/profile.php?id=100086036228775">Facebook</a>
+                              </span>
+                              <span>
+                                   
+                                    <img src="{% static '/Img/Logo/Instagram.png' %}" width="50px"  height="50px" alt="">
+                                    <a href="https://www.instagram.com/diamonds.cards0/">Instagram</a>
+                              </span>
+                        </div>
+                      <img src="{% static '/Img/carousel/Carousel1.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container" id="wandy" >
+                              <span>
+                                  
+                                    <img src="{% static '/Img/Logo/Faceboock.png' %}" width="50px" height="50px" alt="">
+                                    <a href="#">Facebook</a>
+                              </span>
+                              <span>
+                                    
+                                    <img src="{% static '/Img/Logo/Instagram.png' %}" width="50px"  height="50px" alt="">
+                                    <a href="#">Instagram</a>
+                              </span>
+                        </div>
+                      <img src="{% static '/Img/carousel/Carousel2.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container" id="wandy" >
+                              <span>
+                                  
+                                    <img src="{% static '/Img/Logo/Faceboock.png' %}" width="50px" height="50px" alt="">
+                                    <a href="#">Facebook</a>
+                              </span>
+                              <span>
+                                 
+                                    <img src="{% static '/Img/Logo/Instagram.png' %}" width="50px"  height="50px" alt="">
+                                    <a href="#">Instagram</a>
+                              </span>
+                        </div>
+                      <img src="{% static '/Img/carousel/Carousel3.jpg' %}" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+         
+                </div>
+            </div>
+      </main>
+      <!-- Footer -->
+      <footer class="container" id="container-footer" >
+            <!-- Informaciones de nosotros -->
+      <div class="container-info" >
+            <h2>Sobre nosotros</h2>
+            <p>
+                  Diamons-card es una tienda online de recargar diamantes en Freefire, escuchamos los gritos de mejores jugadores y aqui estan los cupones a precios super competitivos, nos basamos en sus registro para dar publicidad y asi generar las mejores ofertas.
+            </p>
+      </div>
+      <!-- Derechos reservados -->
+      <div class="container-derechos" >
+            <h2>Diamonds-Card</h2>
+            <p>
+                  © 2022, Level Up! Interactive Ltda. TODOS LOS DERECHOS RESERVADOS. Todas las marcas son propiedad de sus respectivos dueños en los Estados Unidos y en otros países.
+                  Los horarios del sitio siguen la Hora oficial de Santiago (GMT-4)
+            </p>
+      </div>
+      </footer>
+</body>
+</html>

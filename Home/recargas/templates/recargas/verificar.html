@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Verificando</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+<!-- Botstrap css-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- Botstrap js-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!-- Link CSS -->
+      <link rel="stylesheet" href=" {% static '/styles.css' %} ">
+</head>
+<body>
+      <main>
+            <div class="container">
+                  <h2>Ultimo paso <strong>Verificando..</strong></h2>
+
+                  <p>La validacion y su compra puede tardar unos 5 minutos, <strong>Por favor espere mientras confirmamos su metodo de pago.</strong></p>
+                        <div class="container shadow   rounded-2 " >
+                        <ul>
+                         
+                               
+                               {% for card in cards  %}
+                               <br>
+                               <li>
+                                    Se enviara un monto de Diamantes, asegurate de que  tu ID este aqui  
+                                    <strong class='text-bg-primary text-capitalize text-bg-body p-1 m-1 rounded-2' >{{card}}</strong>
+                              </li>
+                               {% endfor %}
+                               
+                       
+                        </ul>
+                  </div>
+                  <div class="container">
+                        <h2>Ingrese su Correo</h2>
+                        <p>Confirmaremos su compra atravez de su correo y enviaremos la factura de su compra</p>
+                        <form action="" method="post">
+                              {% csrf_token %}
+                              <div class="mb-1">
+                                    <label for="" class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="email_3"  aria-describedby="emailHelpId" placeholder="username@gmail.com">
+                                    <small id="emailHelpId" class="form-text text-muted">Diamonds_Cards@gmail.com</small>
+                                  </div>
+
+                                  <input type="submit" id="input-button" value="Enviar">
+                        </form>
+                      
+                  </div>
+                  {% comment %} <button id="input-button" ><a href="{% url 'recargas:index' %}">Inicio</a></button> {% endcomment %}
+                  
+            </div>
+      </main>
+</body>
+</html>

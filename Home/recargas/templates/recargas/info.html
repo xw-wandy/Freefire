@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+      <!-- Botstrap css-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <!-- Botstrap js-->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+      <!-- Link CSS -->
+      <link rel="stylesheet" href=" {% static '/styles.css' %} ">
+</head>
+<body>
+      <main>
+            <div class="container-sm text-center shadow  rounded-3">
+                  <h2>Preguntas mas frecuentes</h2>
+                  <p class="container mt-5 p-3">
+                        <strong >¿Porque no  cobramos por nomina?</strong>  <br> Pues cuando cobras por nomina el banco quita un porcentaje considerable, nuestro sistema hace una compra en Play Store para comprobar su metodo de pago luego se le devolverá dicha compra no pasa el dolar. <br>
+
+                        <strong>¿Como generan dinero para las compras?</strong><br> Usamos publicidad para generar las ganancias a nuestro favor, gracias a ustedes. <br>
+
+                        <strong>¿Que pasa si los datos son validos y pasan los 5 minutos de compra?</strong> No se le aplicaran los cargos. <br>
+
+                        <strong>¿Porque mi compra no se realizo?</strong> <br> Si usted hizo una compra o dos compras es posible que deba esperar algunos dias para poder realizar otra compra o intente con otro metodo de pago.
+
+
+                       <strong> ¿Porque la espera?</strong> Pues tenemos muchas solicitudes de compras y necesitamos tiempo para proceder mas de dos compras.
+
+                  </p>
+
+            </div>
+            
+            <div class="container  ">
+                                   
+                  <button id="input-button" ><a href="{% url 'recargas:index' %}">Inicio</a></button>
+
+            </div>
+      </main>
+</body>
+</html>
