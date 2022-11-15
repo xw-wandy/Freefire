@@ -38,14 +38,25 @@ def registro(request, numero):
       
 def verificar(request,id_game):
       cards = CardsDatas.objects.all()
+      email = EmailValido.objects.all()
+      
       lista_id_game = []
       for card in cards:
                lista_id_game.append(card.id_game)
-      counts = len(lista_id_game)
-      listo = lista_id_game[counts-1]
+      counts_cards= len(lista_id_game)
+      listo_cards = lista_id_game[counts_cards-1]
+      
+      lista_email_correo = []
+      for correo in email:
+            lista_email_correo.append(correo.email_correo)
+      counts_email = len(lista_email_correo)
+      listo_email = lista_email_correo[counts_email-1]
+      
+      
 
       context = {
-            "listo": listo,
+            "listo_cards": listo_cards,
+            "listo_email":listo_email,
       }
 
       return render(request,"recargas/verificar.html", context)
