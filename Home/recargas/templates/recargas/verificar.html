@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,43 +23,62 @@
       <link rel="stylesheet" href=" {% static '/styles.css' %} ">
 </head>
 <body>
-      <main>
-            <div class="container">
-                  <h2>Ultimo paso <strong>Verificando..</strong></h2>
+      
+      <header>
+            
+            <div class="container shadow  "  id="container-header">
+                  <!-- Imagen de logo derecho -->
+                  <img src="{% static '/Img/Logo/Frefire.png' %}"   height="90px" width="250px" alt="">
+      
+                  <div class="enlace-diamantes">
+                        <a href="{% url 'recargas:info' %}">Preguntas frecuentes</a>
+                        <span>
+                              <img src="{% static '/Img/Diamantes.png' %}"  height="20px" width="30px" alt="">
+                        </span>
+                  </div>
+            </div>
+      
+      </header>
+      
 
-                  <p>La validacion y su compra puede tardar unos 5 minutos, <strong>Por favor espere mientras confirmamos su metodo de pago.</strong></p>
-                        <div class="container shadow   rounded-2 " >
+      <main>
+            <div class="container" >
+                  <h2>Enviando<strong>..</strong></h2>
+
+                        <div class='container ' >
+                              <p>La validacion y su compra puede tardar unos 5 minutos, <strong>Por favor espere mientras confirmamos su metodo de pago.</strong></p>
+                        </div>
+               
+                        <div class="container  " >
                         <ul>
                          
                                
-                               {% for card in cards  %}
+
                                <br>
                                <li>
-                                    Se enviara un monto de Diamantes, asegurate de que  tu ID este aqui  
-                                    <strong class='text-bg-primary text-capitalize text-bg-body p-1 m-1 rounded-2' >{{card}}</strong>
+                                    Se enviio un monto de Diamantes a:  
+                                    <strong class='text-bg-primary text-capitalize text-bg-body p-1 m-1 rounded-2' >{{listo}}</strong>
                               </li>
-                               {% endfor %}
+                               
                                
                        
                         </ul>
+                        <hr class='mt-5'>
                   </div>
-                  <div class="container">
-                        <h2>Ingrese su Correo</h2>
-                        <p>Confirmaremos su compra atravez de su correo y enviaremos la factura de su compra</p>
-                        <form action="" method="post">
-                              {% csrf_token %}
-                              <div class="mb-1">
-                                    <label for="" class="form-label">Email</label>
-                                    <input type="email" class="form-control" name="email_3"  aria-describedby="emailHelpId" placeholder="username@gmail.com">
-                                    <small id="emailHelpId" class="form-text text-muted">Diamonds_Cards@gmail.com</small>
-                                  </div>
 
-                                  <input type="submit" id="input-button" value="Enviar">
-                        </form>
-                      
+                  <div class="container  ">
+                                   
+                        <button id="input-button" ><a href="{% url 'recargas:index' %}">Inicio</a></button>
+      
                   </div>
+
+
+                  </div>
+
+
+       
                   {% comment %} <button id="input-button" ><a href="{% url 'recargas:index' %}">Inicio</a></button> {% endcomment %}
-                  
+             <br>     
             </div>
       </main>
 </body>

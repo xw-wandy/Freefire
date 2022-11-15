@@ -86,10 +86,10 @@ a:hover
 /* Styles of card */
 .card
 {
-      width: 26rem;
+      width: 39rem;
       height: 29rem;
       background-color: black;
-      color: aliceblue;
+      /* color: aliceblue; */
       margin: 0 auto;
 }
 
@@ -326,14 +326,15 @@ a:hover
 #container-buy-2
 {
       margin-top: 3rem;
-      height: 45rem;
-      width: 29rem;
+      height: 60rem;
+      background-color: transparent;
+      width: auto;
       /* display: flex; */
       display: flex;
       /* flex-wrap: wrap; */
       justify-content: center;
-      /* background-color: rgb(19, 22, 44 ); */
-      background-color: black;
+      background-color: rgb(255, 255, 255);
+      /* background-color: black; */
       border-radius: 0.6rem;
       margin-bottom: 5rem;
 }
@@ -359,6 +360,61 @@ h1, p
 
 /* verificar */
 
+
+
+#container_invitado
+{
+      width: 24rem;
+      margin:  0 0;
+}
+
+.input_invitado
+{
+      border: none;
+      border-radius: 0.6rem;
+      padding: 0.3rem;  
+      width: 22rem;
+      margin: 0.2rem auto;   
+      outline-style:solid;
+      outline-color: rgb(255, 179, 0);
+      outline-width:thin;
+}
+
+#losabias
+{
+      background-color: rgb(217, 217, 217 );
+      border-radius: 0.6rem;
+      height: 9rem;
+}
+
+#losabias p, h3 
+{
+      color: black;
+}
+
+#losabias p
+{
+      line-height: 16px;
+}
+
+.informativo
+{
+      background-color: rgb(255, 184, 0);
+      width: 9rem;
+      height: 1.5rem;
+      text-align: center;
+      border-radius: 0.6rem;
+}
+
+.informativo a
+{
+      color: black;
+}
+
+.informativo:hover
+{
+      width: 9.3rem;
+}
 /* Break-point */
 @media (max-width: 992px) {
       #seccion-card

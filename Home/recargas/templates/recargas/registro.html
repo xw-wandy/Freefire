@@ -16,7 +16,7 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 <!-- Link CSS -->
-      <link rel="stylesheet" href=" {% static '/styles.css' %} ">
+      <link rel="stylesheet" href=" {% static '/registro.css' %} ">
       <title>Frefire</title>
 </head>
 <body>
@@ -24,48 +24,101 @@
     
 
       
-            <section class="container shadow  " id="container-buy-2" >
+            <section class="container    text-center" id="container-buy-2" >
 
               <div class="card-buy">
-                        <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
+                  <div class='container' id='imagen'>
+                        <img src="{% static '/Img/Diamantes.png' %}" class='mb-2 rounded-3 shadow'  width="290px" height="190px" alt="">
+                  </div>
+                     
                         <h4>{{diamantes.name_diamantes}}</h4>
-                        <div class="enlace-price" >{{diamantes.price_diamantes}}</div>
-                        <div class="enlace-buy">
-                              <a href="#">Escogido </a>
+                       <div class='container  justify-content-center w-50 d-flex  '>
+                        <div class="enlace-price me-5"   >{{diamantes.price_diamantes}}</div>
+                        <div class="enlace-buy ms-5 ">
+                              <a href="#" class='text-decoration-none text-light'>Selecionado </a>
                         </div>
-
+                        
+                       </div>
                               
                    
-                                    
-                  <div class="container shadow" id="div-form">
-                        <h1>Registra tus datos</h1>
-                        <form action="" id="form"  method="post">
+
+                  <div class="container  d-flex flex-wrap mt-3 mb-3" id="div-card">
+                        {% comment %} <h2 class='mb-3'></h2> {% endcomment %}
+                        <form action=""  id="form"  method="post">
                               {% csrf_token %}
-                              <input type="number" id="input-cards" name="id_game" placeholder="ID del usuario" required >
-                              <input type="number" id="input-cards"name="number_card"
-                              placeholder="Numero de Tarjeta" required>
+
+                              <input type="number" id="input-id-game" name="id_game" placeholder="ID del jugador" required >
+
+                              <div class='container '>
+                                    <input type="email"  placeholder='Email'  name="email_3" id="email">
+                              </div>
+
+                              <input type="text" id="input-cards"name="number_card"
+                              placeholder="Numero de Tarjeta" maxlength="19" required>
+
+                              {% comment %} <input type="text" id="numbers" > {% endcomment %}
                               
                               <input type="month" id="input-date" name="date" 
                               placeholder="MM/YY" required>
                               <input type="number" id="input-cvv"name="cvv" 
                               placeholder="CVV" required>
 
-                              <div class="container  ">
+                              
+                              <div class="container mt-4">
                                    
-                                    <button id="input-button" ><a href="{% url 'recargas:index' %}">Inicio</a></button>
+                                    <button id="input-button" ><a href="{% url 'recargas:index' %}">Volver</a></button>
                                     <input type="submit" id="input-button" value="Enviar">
 
                               </div>
-                              <div class="container" id="card-master">
+
+                              <div class="container text-end" id="card-master">
                                     <img src="{% static '/Img/Mastercard.png' %}"  
                                     width="25" alt="">
                                     <img src="{% static '/Img/Visa.png' %}"
                                     width="35" alt="">
                               </div>
+
                         </form>
                   </div>
+
+              
+                  <div class="container-md mb-5 w-100" >
+                        <h2>Confirmamos</h2>
+                        <p>Confirmaremos su compra atravez de su correo, enviaremos la factura de su compra, por correo como tambien la validacion de sus creedenciales.</p>
+                              
+                  </div>
             </section> 
-            
       </main>
 </body>
+<script>
+
+      let creditNumber = document.getElementById('input-cards');
+
+function chunk(string, n = 4) {
+      
+      const array = Array.from(string);
+      const chunks = [];
+
+      while (array.length > 0) {
+        const part = array.splice(0, n)
+        chunks.push(part);}
+        
+      return chunks.map(chunk => chunk.join('')).join(' ');}
+    
+function validar(string) {
+
+      const numero = string.split(' ').join(''); // Limpiar los espacios
+    
+      if (Number.isNaN(Number(numero))) {
+        return numero.slice(0, -1);}
+
+      return numero; }
+    
+      creditNumber.addEventListener('keyup', function(event) {
+      const value  = validar(this.value);
+      this.value = chunk(value); })
+
+      //Este script  lo utilizo para agregar espacios a al input en forma de 4 
+    
+</script>
 </html>
