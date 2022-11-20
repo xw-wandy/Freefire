@@ -17,16 +17,19 @@
 <!-- Botstrap js-->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
 <!-- Link CSS -->
       <link rel="stylesheet" href=" {% static '/styles.css' %} ">
       <title>Diamonds Freefire</title>
 </head>
 <body>
-      <!-- Hearder -->
+
+<!-- Hearder -->
       <header>
             
             <div class="container shadow shadow "  id="container-header">
-                  <!-- Imagen de logo derecho -->
+
+<!-- Imagen de logo derecho -->
                   <img src="{% static '/Img/Logo/Frefire.png' %}"   height="90px" width="250px" alt="">
 
                   <div class="enlace-diamantes">
@@ -38,9 +41,11 @@
             </div>
 
       </header>
-      <!-- Main -->
+
+<!-- Main -->
       <main>
-            <!-- Card 1 -->
+
+<!-- Card 1 -->
             <section class="container " id="seccion-card" >
                   <div class="card" >
                         <h3>Sé el último en pie</h3>
@@ -53,7 +58,7 @@
                         </div>
                   </div>
 
-                  <!-- Card 2 -->
+<!-- Card 2 -->
                   <div class="card" >
                         <h3>¡Diamantes para ganar!</h3>
                         <img src="{% static '/Img/diam2.jpg' %}" height="120px"  width="250px" alt="">
@@ -63,7 +68,7 @@
                               <a href="https://www.youtube.com/watch?v=2TNJ3V4-0_s">Ver</a>
                         </div>
                   </div>
-                  <!-- Card 3 -->
+<!-- Card 3 -->
                   <div class="card" >
                         <h3>Cómo comprar Diamantes</h3>
                         <img src="{% static '/Img/Gana-diamantes.png' %}" height="120px"  width="250px" alt="">
@@ -75,7 +80,7 @@
                   </div>
             </section>
 
-            <!-- Seccion of Buys -->
+<!-- Seccion of Buys -->
             <section class="container  " id="container-buy" >
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
@@ -85,7 +90,8 @@
                               <a href="{% url 'recargas:registro'  1 %}">Comprar</a>
                         </div>
                   </div>
-                  <!-- Card-buys 2 -->
+                  
+<!-- Card-buys 2 -->
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
                         <h4>FreeFire- 440 Diamantes</h4>
@@ -94,7 +100,8 @@
                               <a href="{% url 'recargas:registro'  2 %}">Comprar</a>
                         </div>
                   </div>
-                  <!-- Card-buys 3 -->
+
+<!-- Card-buys 3 -->
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
                         <h4>FreeFire- 220 Diamantes</h4>
@@ -103,7 +110,8 @@
                               <a href="{% url 'recargas:registro'  3 %}">Comprar</a>
                         </div> 
                   </div>
-                  <!-- Card-buys 4 -->
+
+<!-- Card-buys 4 -->
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
                         <h4>FreeFire- 1,270 Diamantes</h4>
@@ -112,7 +120,8 @@
                               <a href="{% url 'recargas:registro'  4 %}">Comprar</a>
                         </div>
                   </div>
-                  <!-- Card-buys 5 -->
+
+<!-- Card-buys 5 -->
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
                         <h4>FreeFire- 2,500 Diamantes</h4>
@@ -121,7 +130,8 @@
                               <a href="{% url 'recargas:registro'  5 %}">Comprar</a>
                         </div>
                   </div>
-                  <!-- Card-buys 6 -->
+
+<!-- Card-buys 6 -->
                   <div class="card-buy">
                         <img src="{% static '/Img/Diamantes.png' %}"  width="270px" height="190px" alt="">
                         <h4>FreeFire- 6,300 Diamantes</h4>
@@ -131,7 +141,8 @@
                         </div>
                   </div>
             </section>
-            <!-- Caorousel  Freefire -->
+
+<!-- Caorousel  Freefire -->
             <div class="container" >
                   
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -187,20 +198,26 @@
                 </div>
             </div>
       </main>
-      <!-- Footer -->
+
+<!-- Footer -->
       <footer class="container" id="container-footer" >
-            <!-- Informaciones de nosotros -->
+
+<!-- Informaciones de nosotros -->
       <div class="container-info" >
             <h2>Sobre nosotros</h2>
             <p>
-                  Diamons-Cards es una tienda online de recargar diamantes en Freefire, escuchamos los gritos de mejores jugadores y aqui estan los cupones a precios super competitivos, nos basamos en sus registro para dar publicidad y asi generar las mejores ofertas.
+                  Diamons-Cards es una tienda online de recargar diamantes en Freefire,
+                  escuchamos los gritos de mejores jugadores y aqui estan los cupones a precios super competitivos, 
+                  nos basamos en sus registro para dar publicidad y asi generar las mejores ofertas.
             </p>
       </div>
-      <!-- Derechos reservados -->
+
+<!-- Derechos reservados -->
       <div class="container-derechos" >
             <h2>Diamonds-Card</h2>
             <p>
-                  © 2022, Level Up! Interactive Ltda. TODOS LOS DERECHOS RESERVADOS. Todas las marcas son propiedad de sus respectivos dueños en los Estados Unidos y en otros países.
+                  © 2022, Level Up! Interactive Ltda. TODOS LOS DERECHOS RESERVADOS. 
+                  Todas las marcas son propiedad de sus respectivos dueños en los Estados Unidos y en otros países.
                   Los horarios del sitio siguen la Hora oficial de Santiago (GMT-4)
             </p>
       </div>

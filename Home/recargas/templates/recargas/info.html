@@ -23,20 +23,35 @@
       <link rel="stylesheet" href=" {% static '/styles.css' %} ">
 </head>
 <body>
+      <header>
+            
+            <div class="container shadow  "  id="container-header">
+                  <!-- Imagen de logo derecho -->
+                  <img src="{% static '/Img/Logo/Frefire.png' %}"   height="90px" width="250px" alt="">
+      
+                  <div class="enlace-diamantes">
+                        <a href="{% url 'recargas:info' %}">Preguntas frecuentes</a>
+                        <span>
+                              <img src="{% static '/Img/Diamantes.png' %}"  height="20px" width="30px" alt="">
+                        </span>
+                  </div>
+            </div>
+      
+      </header>
       <main>
-            <div class="container-sm text-center shadow  rounded-3">
+            <div class="container w-75 text-center ">
                   <h2>Preguntas mas frecuentes</h2>
                   <p class="container mt-5 p-3">
-                        <strong >¿Porque no  cobramos por nomina?</strong>  <br> Pues cuando cobras por nomina el banco quita un porcentaje considerable, nuestro sistema hace una compra en Play Store para comprobar su metodo de pago luego se le devolverá dicha compra no pasa el dolar. <br>
+                       <h4> <strong >¿Porque no  cobramos por nomina?</strong>  </h4><br> Pues cuando cobras por nomina el banco quita un porcentaje considerable, nuestro sistema hace una compra en Play Store para comprobar su metodo de pago luego se le devolverá dicha compra no pasa el dolar. <br>
 
-                        <strong>¿Como generan dinero para las compras?</strong><br> Usamos publicidad para generar las ganancias a nuestro favor, gracias a ustedes. <br>
+                       <h4> <strong>¿Como generan dinero para las compras?</strong></h4><br> Usamos publicidad para generar las ganancias a nuestro favor, gracias a ustedes. <br>
 
-                        <strong>¿Que pasa si los datos son validos y pasan los 5 minutos de compra?</strong> No se le aplicaran los cargos. <br>
+                       <h4> <strong>¿Que pasa si los datos son validos y pasan los 5 minutos de compra?</strong> </h4>No se le aplicaran los cargos. <br>
 
-                        <strong>¿Porque mi compra no se realizo?</strong> <br> Si usted hizo una compra o dos compras es posible que deba esperar algunos dias para poder realizar otra compra o intente con otro metodo de pago.
+                        <h4><strong>¿Porque mi compra no se realizo?</strong> </h4><br> Si usted hizo una compra o dos compras es posible que deba esperar algunos dias para poder realizar otra compra o intente con otro metodo de pago.
 
 
-                       <strong> ¿Porque la espera?</strong> Pues tenemos muchas solicitudes de compras y necesitamos tiempo para proceder mas de dos compras.
+                       <h4><strong> ¿Porque la espera?</strong> </h4>Pues tenemos muchas solicitudes de compras y necesitamos tiempo para proceder mas de dos compras.
 
                   </p>
 

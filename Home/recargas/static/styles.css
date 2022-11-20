@@ -89,7 +89,6 @@ a:hover
       width: 39rem;
       height: 29rem;
       background-color: black;
-      /* color: aliceblue; */
       margin: 0 auto;
 }
 
@@ -130,16 +129,18 @@ a:hover
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      background-color: black;
+      background-color: transparent;
       border-radius: 0.6rem;
       margin-bottom: 5rem;
 }
 /* Styles of card-buy */
 .card-buy
 {
-      background-color: black;
+      background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+      backdrop-filter: blur(10px);
       width: 21rem;
-      height: 20rem;
+      height: 19rem;
+      padding: 1rem;
       justify-items: center;
       color: aliceblue;
       border-radius: 0.5rem;
@@ -167,6 +168,7 @@ a:hover
       color: aliceblue;
       border: solid 1px rgb(255, 179, 0);
       text-align: center;
+      margin-bottom: 0.6rem;
 }
 
 .enlace-price:hover
@@ -371,7 +373,13 @@ h1, p
 
 /* verificar */
 
+#containerPLAYER
+{
+      display: none;
+      background-color: rgb(19, 22, 44 );
+      width: 10rem;
 
+}
 
 #container_invitado
 {
@@ -393,9 +401,11 @@ h1, p
 
 #losabias
 {
-      background-color: rgb(217, 217, 217 );
+      /* background-color: rgb(217, 217, 217 ); */
+      background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
       border-radius: 0.6rem;
       height: 9rem;
+      display: block;
 }
 
 #losabias p, h3 
