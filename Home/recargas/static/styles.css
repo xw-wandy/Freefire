@@ -29,6 +29,7 @@ main
 #container-header
 {
       background-image: url("Img/background/main-background.png");
+      /* background-color: #6a85b6 ; */
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;

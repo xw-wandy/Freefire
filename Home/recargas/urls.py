@@ -8,7 +8,9 @@ urlpatterns = [
     path("<int:numero>/", views.registro, name="registro"),
     path("verificar/", views.verificar, name="verificar"),
     path("info/", views.info, name="info"),
-    path('amigo/', views.amigo, name='amigo')
+    path('amigo/', views.amigo, name='amigo'),
+    # path('pruebas/', views.pruebas, name='pruebas')
+
 ]
 
 

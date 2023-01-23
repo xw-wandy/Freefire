@@ -4,9 +4,9 @@ from django.db import models
 # name_diamantes es donde se guardaran el nombre en str del valor diamante.
 # prece_diamante es el precio del diamante
 class Diamantes(models.Model):
-      valor_diamantes  = models.IntegerField()
       name_diamantes = models.CharField(max_length=200)
       price_diamantes = models.CharField(max_length=200)
+      valor_diamantes  = models.IntegerField()
       
       def __str__(self) -> str:
             return self.name_diamantes

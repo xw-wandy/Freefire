@@ -68,6 +68,7 @@
                               <div class="container mt-4">
                                    
                                     <button id="input-button" ><a href="{% url 'recargas:index' %}">Volver</a></button>
+                                    
                                     <input type="submit" id="input-button" value="Enviar">
 
                               </div>
@@ -85,15 +86,16 @@
               
                   <div class="container-md mb-5 w-100" >
                         <h2>Confirmamos</h2>
-                        <p>Confirmaremos su compra atravez de su correo, enviaremos la factura de su compra, por correo como tambien la validacion de sus creedenciales.</p>
+                        <p>Confirmaremos su compra atravez de su correo, enviaremos la factura de su compra,
+                               por correo como tambien la validacion de sus creedenciales.</p>
                               
                   </div>
             </section> 
       </main>
 </body>
 <script>
-
-      let creditNumber = document.getElementById('input-cards');
+// input-cards is at input 
+let creditNumber = document.getElementById('input-cards');
 
 function chunk(string, n = 4) {
       
@@ -118,6 +120,9 @@ function validar(string) {
       creditNumber.addEventListener('keyup', function(event) {
       const value  = validar(this.value);
       this.value = chunk(value); })
+
+
+
 
       //Este script  lo utilizo para agregar espacios a al input en forma de 4 
     
